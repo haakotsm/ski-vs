@@ -13,155 +13,156 @@
     <schema id="7" parent="1" name="test"/>
     <schema id="8" parent="1" name="blabla"/>
     <schema id="9" parent="1" name="ture"/>
-    <table id="10" parent="2" name="brukere"/>
-    <table id="11" parent="2" name="ovelse"/>
-    <table id="12" parent="2" name="person"/>
-    <table id="13" parent="2" name="tilskuere"/>
-    <table id="14" parent="2" name="utovere"/>
-    <column id="15" parent="10" name="id">
+    <schema id="10" parent="1" name="svarten"/>
+    <table id="11" parent="2" name="brukere"/>
+    <table id="12" parent="2" name="ovelse"/>
+    <table id="13" parent="2" name="person"/>
+    <table id="14" parent="2" name="tilskuere"/>
+    <table id="15" parent="2" name="utovere"/>
+    <column id="16" parent="11" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="16" parent="10" name="brukernavn">
+    <column id="17" parent="11" name="brukernavn">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="17" parent="10" name="passord">
+    <column id="18" parent="11" name="passord">
       <Position>3</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="18" parent="10" name="PRIMARY">
+    <key id="19" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="19" parent="11" name="id">
+    <column id="20" parent="12" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="20" parent="11" name="navn">
+    <column id="21" parent="12" name="navn">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <column id="21" parent="11" name="verdensrekord">
+    <column id="22" parent="12" name="verdensrekord">
       <Position>3</Position>
       <DataType>time|0</DataType>
     </column>
-    <column id="22" parent="11" name="rekordholder">
+    <column id="23" parent="12" name="rekordholder">
       <Position>4</Position>
       <DataType>int(30)|0</DataType>
     </column>
-    <index id="23" parent="11" name="navn">
+    <index id="24" parent="12" name="navn">
       <ColNames>navn</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="24" parent="11" name="PRIMARY">
+    <key id="25" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="25" parent="11" name="navn">
+    <key id="26" parent="12" name="navn">
       <ColNames>navn</ColNames>
       <UnderlyingIndexName>navn</UnderlyingIndexName>
     </key>
-    <column id="26" parent="12" name="id">
+    <column id="27" parent="13" name="id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="27" parent="12" name="fornavn">
+    <column id="28" parent="13" name="fornavn">
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="28" parent="12" name="etternavn">
+    <column id="29" parent="13" name="etternavn">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="12" name="telefonnummer">
+    <column id="30" parent="13" name="telefonnummer">
       <Position>4</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="30" parent="12" name="adresse">
+    <column id="31" parent="13" name="adresse">
       <Position>5</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="31" parent="12" name="postnummer">
+    <column id="32" parent="13" name="postnummer">
       <Position>6</Position>
       <DataType>char(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="12" name="poststed">
+    <column id="33" parent="13" name="poststed">
       <Position>7</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="33" parent="12" name="PRIMARY">
+    <key id="34" parent="13" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="34" parent="13" name="ovelse_id">
+    <column id="35" parent="14" name="ovelse_id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="13" name="tilskuer_id">
+    <column id="36" parent="14" name="tilskuer_id">
       <Position>2</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="36" parent="13" name="ovelse">
+    <index id="37" parent="14" name="ovelse">
       <ColNames>ovelse_id</ColNames>
     </index>
-    <index id="37" parent="13" name="tilskuer">
+    <index id="38" parent="14" name="tilskuer">
       <ColNames>tilskuer_id</ColNames>
     </index>
-    <foreign-key id="38" parent="13" name="ovelse">
+    <foreign-key id="39" parent="14" name="ovelse">
       <ColNames>ovelse_id</ColNames>
       <RefSchemaName>ski_vm</RefSchemaName>
       <RefTableName>ovelse</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="39" parent="13" name="tilskuer">
+    <foreign-key id="40" parent="14" name="tilskuer">
       <ColNames>tilskuer_id</ColNames>
       <RefSchemaName>ski_vm</RefSchemaName>
       <RefTableName>person</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="40" parent="14" name="ovelse_id">
+    <column id="41" parent="15" name="ovelse_id">
       <Position>1</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="14" name="utover_id">
+    <column id="42" parent="15" name="utover_id">
       <Position>2</Position>
       <DataType>int(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="42" parent="14" name="utover">
+    <index id="43" parent="15" name="utover">
       <ColNames>utover_id</ColNames>
     </index>
-    <index id="43" parent="14" name="utover_ovelse">
+    <index id="44" parent="15" name="utover_ovelse">
       <ColNames>ovelse_id</ColNames>
     </index>
-    <foreign-key id="44" parent="14" name="utover_ovelse">
+    <foreign-key id="45" parent="15" name="utover_ovelse">
       <ColNames>ovelse_id</ColNames>
       <RefSchemaName>ski_vm</RefSchemaName>
       <RefTableName>ovelse</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="45" parent="14" name="utover">
+    <foreign-key id="46" parent="15" name="utover">
       <ColNames>utover_id</ColNames>
       <RefSchemaName>ski_vm</RefSchemaName>
       <RefTableName>person</RefTableName>

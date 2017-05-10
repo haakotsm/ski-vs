@@ -1,0 +1,4 @@
+vendor/
+.idea/vcs.xml
+
+!/composer.lock

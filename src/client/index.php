@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#"> Deltagere </a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="app/html/registration.html"> Registerer til øvelse </a>
+                    <a class="nav-link" href="app/html/registration.html"> Registerer bruker</a>
                 </li>
             </ul>
         </div>
@@ -41,6 +41,7 @@
 </div>
 </body>
 </html>
+
 <?php
 	require_once 'vendor\autoload.php';
 	require_once 'config\config.php';

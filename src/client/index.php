@@ -6,7 +6,7 @@
     <script src="vendor/components/jquery/jquery.min.js"></script>
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-    <script src="app/spa-script.js"></script>
+    <script src="app/scripts/spa-script.js"></script>
 
 </head>
 <body>

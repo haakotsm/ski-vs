@@ -1,4 +1,9 @@
 {
+  "autoload": {
+    "psr-4": {
+      "Database\\": "src/client/app/shared/database/"
+    }
+  },
   "require": {
     "components/jquery": "3.2.*",
     "monolog/monolog": "1.0.*",

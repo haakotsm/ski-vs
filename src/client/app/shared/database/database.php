@@ -1,4 +1,7 @@
 <?php
+	namespace Database;
+
+	require_once 'vendor/autoload.php';
 	include_once '../interfaces/IDatabase.php';
 
 	class Database implements IDatabase {

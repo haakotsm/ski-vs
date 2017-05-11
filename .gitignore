@@ -1,6 +1,4 @@
 vendor/
 .idea/
-ski-vs.iml
-.idea/workspace.xml
 
 !/composer.lock

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164b8cb3-cc7b-4e69-93ca-2072921cd413" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/html/registration.html" afterPath="$PROJECT_DIR$/src/client/app/html/registration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/index.php" afterPath="$PROJECT_DIR$/src/client/index.php" />
@@ -105,8 +104,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+            <state relative-caret-position="132">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -569,12 +568,12 @@
       <workItem from="1494448758936" duration="204000" />
       <workItem from="1494449031042" duration="881000" />
       <workItem from="1494449935401" duration="1571000" />
-      <workItem from="1494488756304" duration="22674000" />
+      <workItem from="1494488756304" duration="22753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45980000" />
+    <option name="totallyTimeSpent" value="46059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1083,8 +1082,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state relative-caret-position="132">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

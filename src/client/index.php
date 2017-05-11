@@ -1,10 +1,9 @@
+<div class="jumbotron">
+	<h1>Dette er en header</h1>
+</div>
 <?php
-	/**
-	 * Created by PhpStorm.
-	 * User: hakon
-	 * Date: 07.05.2017
-	 * Time: 18.04
-	 */
+	require_once '..\..\vendor\autoload.php';
+	require_once '..\..\config\config.php';
 	use Database\Database;
 
 	$db = new Database();
@@ -15,3 +14,5 @@
 	while ( $row = $result->fetch_row() ) {
 		echo join( ' ', $row );
 	}
+	?>
+

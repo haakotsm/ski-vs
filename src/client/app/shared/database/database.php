@@ -1,18 +1,23 @@
 <?php
+
 	namespace Database;
 
-	require_once 'vendor/autoload.php';
-	include_once '../interfaces/IDatabase.php';
+	use Config\AppConfig;
+	use Interfaces;
+	use mysqli;
 
-	class Database implements IDatabase {
+	class Database implements Interfaces\IDatabase {
 
-		static $config;
+		private $config;
 		private $conn;
 
 		function __construct() {
-			if ( !isset( self::$config ) ) self::$config = parse_ini_file( '../config.ini' );
+			if ( !isset( $this->config ) ) {
+				$config = new AppConfig;
+				$this->config = $config->getConfig();
+			}
 			if ( !isset( $this->conn ) ) {
-				$this->conn = new mysqli( 'localhost', self::$config[ 'username' ], self::$config[ 'password' ] );
+				$this->conn = new mysqli( $this->config->host, $this->config->username, $this->config->password );
 				if ( $this->conn->connect_error ) die( "Connection failed: " . $this->conn->connect_error );
 				else $this->create();
 			}
@@ -21,23 +26,23 @@
 
 		private function create() {
 			try {
-				$this->conn->query( "CREATE DATABASE IF NOT EXISTS `" . self::$config[ 'dbname' ] . "`" );
-				$this->conn->select_db( self::$config[ 'dbname' ] );
+				$this->conn->query( "CREATE DATABASE IF NOT EXISTS `" . $this->config->dbname . "`" );
+				$this->conn->select_db( $this->config->dbname );
 
-				$sql = "CREATE TABLE IF NOT EXISTS `" . self::$config[ 'dbname' ] . "`.`brukere`(
+				$sql = "CREATE TABLE IF NOT EXISTS `" . $this->config->dbname . "`.`brukere`(
 `id` INT AUTO_INCREMENT PRIMARY KEY,
 `brukernavn` VARCHAR(30) NOT NULL,
 `passord` VARCHAR(50) NOT NULL);";
 				$this->conn->query( $sql );
 
-				$sql = "CREATE TABLE IF NOT EXISTS `" . self::$config[ 'dbname' ] . "`.`ovelse`(
+				$sql = "CREATE TABLE IF NOT EXISTS `" . $this->config->dbname . "`.`ovelse`(
                 `id` INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                 `navn` VARCHAR(30) DEFAULT NULL UNIQUE,
                 `verdensrekord` TIME DEFAULT NULL,
                 `rekordholder` INT(30) DEFAULT NULL);";
 				$this->conn->query( $sql );
 
-				$sql = "CREATE TABLE IF NOT EXISTS `" . self::$config[ 'dbname' ] . "`.`person`(
+				$sql = "CREATE TABLE IF NOT EXISTS `" . $this->config->dbname . "`.`person`(
                 `id` INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                 `fornavn` VARCHAR(30) NOT NULL,
                 `etternavn` VARCHAR(30) NOT NULL,
@@ -47,7 +52,7 @@
                 `poststed` VARCHAR(20) NOT NULL);";
 				$this->conn->query( $sql );
 
-				$sql = "CREATE TABLE IF NOT EXISTS `" . self::$config[ 'dbname' ] . "`.`tilskuere`(
+				$sql = "CREATE TABLE IF NOT EXISTS `" . $this->config->dbname . "`.`tilskuere`(
                 `ovelse_id` INT(10) NOT NULL,
                 `tilskuer_id` INT(10) NOT NULL,
                 KEY `ovelse` (`ovelse_id`),
@@ -56,7 +61,7 @@
                 CONSTRAINT `tilskuer` FOREIGN KEY (`tilskuer_id`) REFERENCES `person` (`id`));";
 				$this->conn->query( $sql );
 
-				$sql = "CREATE TABLE IF NOT EXISTS `" . self::$config[ 'dbname' ] . "`.`utovere` (
+				$sql = "CREATE TABLE IF NOT EXISTS `" . $this->config->dbname . "`.`utovere` (
                 `ovelse_id` INT(10) NOT NULL,
                 `utover_id` INT(10) NOT NULL,
                 KEY `utover` (`utover_id`),

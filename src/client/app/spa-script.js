@@ -13,15 +13,13 @@ $(document).ready(function(){
 });
 
 function callPage(pageRefInput) {
-    console.log("kom seg til call page gitt")
     $.ajax({
         url: pageRefInput,
         type: "GET",
-        dataType: "text/html",
+        dataType: "text",
 
         success: function ( response ) {
-            console.log('page loaded', response);
-            $('.main-view').html(response);
+            $('#main-view').html(response);
         },
 
         error: function ( error ) {

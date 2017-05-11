@@ -1,8 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "Database\\": "src/client/app/shared/database/",
-      "Interfaces\\": "src/client/app/shared/interfaces/",
+      "Database\\": "app/shared/database/",
+      "Interfaces\\": "app/shared/interfaces/",
       "Config\\": "config/"
     }
   },

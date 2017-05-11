@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164b8cb3-cc7b-4e69-93ca-2072921cd413" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/app/resources/resources.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/app/resources/user-resources/userservice.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ski-vs.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/scripts/spa-script.js" afterPath="$PROJECT_DIR$/src/client/app/scripts/spa-script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/shared/database/database.php" afterPath="$PROJECT_DIR$/src/client/app/shared/database/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/html/registration.html" afterPath="$PROJECT_DIR$/src/client/app/html/registration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/index.php" afterPath="$PROJECT_DIR$/src/client/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userservice.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userservice.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/app/resources/user-resources/userservice.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="759">
@@ -100,6 +98,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,7 +162,6 @@
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/src/client/app/shared/interfaces/IDatabase.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/client/app/index.html" />
         <option value="$PROJECT_DIR$/src/client/app/spa-script.js" />
@@ -168,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/client/index.php" />
         <option value="$PROJECT_DIR$/src/client/app/scripts/spa-script.js" />
         <option value="$PROJECT_DIR$/src/client/app/resources/user-resources/userservice.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -562,12 +570,12 @@
       <workItem from="1494448758936" duration="204000" />
       <workItem from="1494449031042" duration="881000" />
       <workItem from="1494449935401" duration="1571000" />
-      <workItem from="1494488756304" duration="22340000" />
+      <workItem from="1494488756304" duration="22454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45646000" />
+    <option name="totallyTimeSpent" value="45760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,7 +595,7 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2818768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.100359716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -943,14 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1079,6 +1079,14 @@
           <folding>
             <element signature="e#45#58#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

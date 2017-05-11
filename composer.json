@@ -3,7 +3,9 @@
     "psr-4": {
       "Database\\": "app/shared/database/",
       "Interfaces\\": "app/shared/interfaces/",
-      "Config\\": "config/"
+      "Config\\": "config/",
+      "Resources\\": "app/resources/",
+      "Resources\\UserResources\\": "app/resources/user-resources/"
     }
   },
   "require": {

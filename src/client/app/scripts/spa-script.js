@@ -4,7 +4,7 @@
 
 
 console.log("script loaded");
-$(document).ready(function(){
+$(document).ready(function () {
     $('a').on('click', function (e) {
         e.preventDefault();
         var pageRef = $(this).attr('href');
@@ -18,11 +18,11 @@ function callPage(pageRefInput) {
         type: "GET",
         dataType: "text",
 
-        success: function ( response ) {
+        success: function (response) {
             $('#main-view').html(response);
         },
 
-        error: function ( error ) {
+        error: function (error) {
             console.log("page not loaded", error);
         },
 

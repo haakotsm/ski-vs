@@ -5,6 +5,7 @@
 	use Config\AppConfig;
 	use Interfaces;
 	use mysqli;
+	use mysqli_sql_exception;
 
 	class Database implements Interfaces\IDatabase {
 
@@ -70,7 +71,7 @@
                 CONSTRAINT `utover_ovelse` FOREIGN KEY (`ovelse_id`) REFERENCES `ovelse` (`id`));";
 				$this->conn->query( $sql );
 			} catch (mysqli_sql_exception $error) {
-				echo $error;
+				throw $error;
 			}
 		}
 
@@ -79,16 +80,28 @@
 		}
 
 		public function select( $query ) {
-			$result = $this->query( $query );
-			return !$result ? $result->fetch_array() : false;
+			try {
+				$result = $this->query( $query );
+				return !$result ? $result->fetch_array() : false;
+			} catch (mysqli_sql_exception $error) {
+				throw $error;
+			}
 		}
 
 		public function query( $query ) {
-			return $this->conn->query( $query );
+			try {
+				return $this->conn->query( $query );
+			} catch (mysqli_sql_exception $error) {
+				throw $error;
+			}
 		}
 
 		public function quote( $value ) {
-			return "'" . mysqli_real_escape_string( $this->conn, $value ) . "'";
+			try {
+				return "'" . mysqli_real_escape_string( $this->conn, $value ) . "'";
+			} catch (mysqli_sql_exception $error) {
+				throw $error;
+			}
 		}
 
 		/**

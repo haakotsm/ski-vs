@@ -1,7 +1,9 @@
 {
   "autoload": {
     "psr-4": {
-      "Database\\": "src/client/app/shared/database/"
+      "Database\\": "src/client/app/shared/database/",
+      "Interfaces\\": "src/client/app/shared/interfaces/",
+      "Config\\": "config/"
     }
   },
   "require": {

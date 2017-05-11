@@ -7,6 +7,7 @@
   "require": {
     "components/jquery": "3.2.*",
     "monolog/monolog": "1.0.*",
-    "leafo/scssphp": "0.0.12"
+    "leafo/scssphp": "0.0.12",
+    "twbs/bootstrap": "4.0.0-alpha.6"
   }
 }

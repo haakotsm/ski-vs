@@ -1,5 +1,5 @@
 <?php
-	include_once 'IDatabase.php';
+	include_once '../interfaces/IDatabase.php';
 
 	class Database implements IDatabase {
 
@@ -7,7 +7,7 @@
 		private $conn;
 
 		function __construct() {
-			if ( !isset( self::$config ) ) self::$config = parse_ini_file( './config.ini' );
+			if ( !isset( self::$config ) ) self::$config = parse_ini_file( '../config.ini' );
 			if ( !isset( $this->conn ) ) {
 				$this->conn = new mysqli( 'localhost', self::$config[ 'username' ], self::$config[ 'password' ] );
 				if ( $this->conn->connect_error ) die( "Connection failed: " . $this->conn->connect_error );

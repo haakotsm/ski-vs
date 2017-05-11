@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VM i ski</title>
+    <script src="./vendor/components/jquery/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $.ajax({
+        url: "src/client/index.php"
+    }).done(function(data) {
+        $('body').html(data)
+    });
+</script>
+</body>
+</html>
